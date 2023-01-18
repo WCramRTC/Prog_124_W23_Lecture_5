@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:Prog_124_W23_Lecture_5"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FF5B6DFF">
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="18,51,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="18,106,0,0" VerticalAlignment="Top"/>
+        <Label Content="Balance" HorizontalAlignment="Left" Margin="18,161,0,0" VerticalAlignment="Top"/>
+        <Label Content="Type Of Account" HorizontalAlignment="Left" Margin="18,215,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFName" HorizontalAlignment="Left" Margin="18,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLName" HorizontalAlignment="Left" Margin="18,132,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtBalance" HorizontalAlignment="Left" Margin="18,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+        <Canvas Margin="18,246,662,96" Background="#FFABD3FF">
+            <RadioButton x:Name="rbSavings" Content="Savings" Canvas.Left="10" Canvas.Top="10"/>
+            <RadioButton x:Name="rbChecking" Content="Checking" Canvas.Left="10" Canvas.Top="39" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rbRetirement" Content="Retirement" Canvas.Left="10" Canvas.Top="67" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+
+        <ListBox x:Name="lbAccounts" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="167,31,297,37"/>
+        <Button x:Name="btnAddAccount" Content="Add Account" HorizontalAlignment="Left" Margin="31,353,0,0" VerticalAlignment="Top" Height="44" Width="85" Click="btnAddAccount_Click"/>
 
     </Grid>
 </Window>
