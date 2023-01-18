@@ -1,0 +1,19 @@
+﻿<Window x:Class="Prog_124_W23_Lecture_5.Sample.In_Class_Lecture"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prog_124_W23_Lecture_5.Sample"
+        mc:Ignorable="d"
+        Title="In_Class_Lecture" Height="450" Width="800">
+    <Grid>
+        <RichTextBox Margin="174,43,174,43">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runInfo" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
